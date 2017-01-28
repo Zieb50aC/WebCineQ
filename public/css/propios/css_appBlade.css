@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Capture";
+    src: url(../../fonts/Capture.ttf) format("truetype");
+}
+body
+{
+    background-image: url(../../img/fondo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cabecera
+{
+   
+}
+.titulo
+{
+    margin: 15px 15px 15px 25px;
+    height: 150px;
+    border: 2px solid #600000;
+    border-radius: 5px;
+    background-image: url(../../img/rollo_cine2.jpg);  
+    font-family: "Capture";
+    font-size: 120px;
+    text-shadow: -4px -4px 2px #000, 4px 4px 2px #000, -4px 4px 2px #000, 4px -4px 2px #ff0000;
+    text-align: center;
+    padding: 0px !important;
+    
+}
+.letraPeq
+{
+    display: inline;
+    font-size: 90px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #ff0000;
+    text-align: center;
+    
+}
+.transp
+{
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+}
+.sombraCaja
+{
+     -webkit-box-shadow: -1px 22px 88px 10px rgba(0,0,0,0.98);
+    -moz-box-shadow: -1px 22px 88px 10px rgba(0,0,0,0.98);
+    box-shadow: -1px 22px 88px 10px rgba(0,0,0,0.98);
+}
