@@ -2,6 +2,7 @@
     font-family: "Capture";
     src: url(../../fonts/Capture.ttf) format("truetype");
 }
+
 body
 {
     background-image: url(../../img/fondo2.jpg);
@@ -45,4 +46,8 @@ body
      -webkit-box-shadow: -1px 22px 88px 10px rgba(0,0,0,0.98);
     -moz-box-shadow: -1px 22px 88px 10px rgba(0,0,0,0.98);
     box-shadow: -1px 22px 88px 10px rgba(0,0,0,0.98);
+}
+.sinPunto
+{
+    list-style:none;
 }

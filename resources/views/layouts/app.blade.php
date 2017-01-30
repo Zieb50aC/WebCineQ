@@ -25,63 +25,20 @@
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    
         <link rel="stylesheet" type="text/css" href="css/bootstrap_theme_slate.min.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme-X.css">-->
+    
         <link rel="stylesheet" type="text/css" href="css/propios/css_appBlade.css">
         <link rel="stylesheet" type="text/css" href="css/propios/homeBlade.css">
-    <link rel="stylesheet" type="text/css" href="css/propios/welcomeBlade.css">
-        <!--<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
+        <link rel="stylesheet" type="text/css" href="css/propios/welcomeBlade.css">
+        
    
    
 
     
 </head>
 <body >
-    <!--<nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header">
-
-               
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                    <span class="sr-only">Toggle Navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
-                </ul>
-
-                
-                <ul class="nav navbar-nav navbar-right">
-                  
-                    @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
-                    @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
-                            </a>
-
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
-                            </ul>
-                        </li>
-                    @endif
-                </ul>
-            </div>
-        </div>
-    </nav>-->
     <div class = " row cabecera">
         <div class = "col-xl-4 col-lg-4 col-md-4 col-sm-4"></div>
         <div class=" col-xl-4 col-lg-4 col-md-4 col-sm-4 titulo sombraCaja">
@@ -97,7 +54,7 @@
                 <a href="{{ url('/login') }}" class="btn btn-default btn-lg btn-block sombraCaja">Login</a>
                 <a href="{{ url('/register') }}" class="btn btn-default btn-lg btn-block sombraCaja">Registrate</a>
             @else
-                 <li class="dropdown">
+                 <li class="dropdown sinPunto">
                     <a class="btn btn-default btn-lg btn-block dropdown-toggle sombraCaja" data-toggle="dropdown" href="#" aria-expanded="false">{{ Auth::user()->name }}<span class="caret"></span></a>
                     <ul class="dropdown-menu sombraCaja" style = "min-width: 100% !important;">
                         <li><a href="#">Action</a></li>
