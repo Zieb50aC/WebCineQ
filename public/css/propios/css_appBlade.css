@@ -51,3 +51,24 @@ body
 {
     list-style:none;
 }
+.preguntas
+{
+    text-align: center;
+    height: 300px;
+    width: 475px;
+   
+
+    margin-left:   215px;
+    margin-right:  150px;
+ 
+    background-color: dimgrey;
+
+    border: 2px solid black;
+    
+}
+.respuestas
+{
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 25px;
+}
