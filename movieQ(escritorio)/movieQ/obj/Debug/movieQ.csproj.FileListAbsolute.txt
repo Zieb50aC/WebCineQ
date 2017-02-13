@@ -1,0 +1,12 @@
+C:\Users\davidac23\Desktop\movieQ\movieQ\bin\Debug\movieQ.exe.config
+C:\Users\davidac23\Desktop\movieQ\movieQ\bin\Debug\movieQ.exe
+C:\Users\davidac23\Desktop\movieQ\movieQ\bin\Debug\movieQ.pdb
+C:\Users\davidac23\Desktop\movieQ\movieQ\obj\Debug\movieQ.csprojResolveAssemblyReference.cache
+C:\Users\davidac23\Desktop\movieQ\movieQ\obj\Debug\movieQ.FormOpciones.resources
+C:\Users\davidac23\Desktop\movieQ\movieQ\obj\Debug\movieQ.Properties.Resources.resources
+C:\Users\davidac23\Desktop\movieQ\movieQ\obj\Debug\movieQ.csproj.GenerateResource.Cache
+C:\Users\davidac23\Desktop\movieQ\movieQ\obj\Debug\movieQ.exe
+C:\Users\davidac23\Desktop\movieQ\movieQ\obj\Debug\movieQ.pdb
+C:\Users\davidac23\Desktop\movieQ\movieQ\obj\Debug\movieQ.Form1.resources
+C:\Users\davidac23\Desktop\movieQ\movieQ\obj\Debug\movieQ.FormPreguntas.resources
+C:\Users\davidac23\Desktop\movieQ\movieQ\obj\Debug\movieQ.FormUsuarios.resources
