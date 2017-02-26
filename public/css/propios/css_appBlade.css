@@ -5,7 +5,7 @@
 
 body
 {
-    background-image: url(../../img/fondo2.jpg);
+    background-image: url(../../img/fondo5.JPEG);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -25,6 +25,7 @@ body
     text-shadow: -4px -4px 2px #000, 4px 4px 2px #000, -4px 4px 2px #000, 4px -4px 2px #ff0000;
     text-align: center;
     padding: 0px !important;
+    width: inherit;
     
 }
 .letraPeq
@@ -40,7 +41,20 @@ body
     background-color: rgba(0,0,0,.8);
     width: 100%;
     height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
+
+.transpLog
+{
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .sombraCaja
 {
      -webkit-box-shadow: -1px 22px 88px 10px rgba(0,0,0,0.98);
