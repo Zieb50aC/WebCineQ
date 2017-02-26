@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+class Pregunta extends Model
 {
      //para "migrar" de la bd la tabla ciudades
      protected $table = 'pregunta';
