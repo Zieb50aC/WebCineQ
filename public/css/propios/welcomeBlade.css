@@ -1,0 +1,173 @@
+.pregunta
+{
+    font-family: "Capture";
+    font-size: 65px;
+    text-shadow: -4px -4px 2px #000, 4px 4px 2px #000, -4px 4px 2px #000, 4px -4px 2px #ff0000;
+    text-align: center;
+    padding: 0px !important;
+}
+.preguntaPeque
+{
+    display: inline;
+    font-size: 45px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #ff0000;
+    text-align: center;
+}
+
+#welcomeLogo
+{
+    padding-top: 50px important!;
+    display: block;
+    margin: auto;
+    width: 75%;
+    height: auto;
+}
+.welcomeP
+{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: fantasy;
+   
+}
+.homePruebas
+{
+    display: inherit !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.homeBorde
+{
+    border: 2px solid #ff0000;
+    border-radius: 10px; 
+}
+/*.homeFondoLista
+{
+    background-color: rgb(171, 169, 169);
+    color: #eee !important;
+    font-family: fantasy;
+    font-size: x-large;
+   
+}*/
+.homeSubtitulo
+{
+    font-family: fantasy;
+    font-size: x-large;
+    color:coral;
+}
+.homeTabla
+{
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    background-color: rgba(171,169,169,.0) !important;
+    color: #eee !important;
+    font-family: fantasy;
+    font-size: x-large;
+}
+
+.homebordeTablaBttom
+{
+    border-bottom:1px solid #1c1e22 !important;
+}
+.homeBtnAcceptar, .homeBtnAcceptar:active
+{
+   /* background-color:chartreuse !important;
+    color: black !important;*/
+   
+    font-size: 20px;
+    color: chartreuse !important;
+}
+.homeBtnAcceptar:hover
+{
+   /* background-color:chartreuse !important;
+    color: black !important;*/
+  
+    font-size: 20px;
+    color:darkgreen !important;
+    
+}
+.homeBtnAcceptar:link , .homeBtnRechazar:link    
+{   
+    text-decoration:none; 
+}
+.homeBtnRechazar
+{
+    font-size: 20px;
+    color:#ff0000 !important; 
+} 
+.homeBtnRechazar:hover
+{
+    font-size: 20px;
+    color:darkred !important;
+}
+.juegoTextoPregunta
+{
+    color: #eee !important;
+    font-family: fantasy;
+    font-size: x-large;
+}
+
+
+
+/**************************************************************************************
+                        CSS PARA LOS RADIOBUTTONS Y CHECKBOXES
+**************************************************************************************/
+
+ .formulario h2 {
+    font-size: 16px;
+    color: #001F3F;
+    margin-bottom: 20px;
+    margin-left: 20px; }
+  .formulario > div {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; }
+  .formulario .radio label,
+  .formulario .checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    color: #FF4136;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 20px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .formulario .radio label:hover,
+    .formulario .checkbox label:hover {
+      background: rgba(255, 65, 54, 0.1); }
+    .formulario .radio label:before,
+    .formulario .checkbox label:before {
+      content: "";
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      position: absolute;
+      left: 15px;
+      border-radius: 50%;
+      background: none;
+      border: 3px solid #FF4136; }
+  .formulario input[type="radio"] {
+    display: none; }
+    .formulario input[type="radio"]:checked + label:before {
+      display: none; }
+    .formulario input[type="radio"]:checked + label {
+      padding: 5px 15px;
+      background: #FF4136;
+      border-radius: 2px;
+      color: #fff; }
+  .formulario .checkbox label:before {
+    border-radius: 3px; }
+  .formulario .checkbox input[type="checkbox"] {
+    display: none; }
+    .formulario .checkbox input[type="checkbox"]:checked + label:before {
+      display: none; }
+    .formulario .checkbox input[type="checkbox"]:checked + label {
+      background: #FF4136;
+      color: #fff;
+
+
+
+
+

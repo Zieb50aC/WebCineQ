@@ -31,5 +31,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::auth();
 
     Route::get('/home', 'HomeController@index');
-    Route::get('/preguntas', function () { return view('preguntas');});
+    Route::get('/home/juegoAleatorio', 'HomeController@juegoAleatorio');
+    Route::get('/juego', 'JuegoController@index');
+    Route::get('/juego/aleatorio', 'JuegoController@aleatorio');
 });
+

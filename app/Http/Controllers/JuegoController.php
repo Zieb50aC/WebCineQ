@@ -7,10 +7,11 @@ use App\User;
 use App\Partida;
 use App\PregPartida;
 use App\Pregunta;
+use Illuminate\Database\QueryException;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class JuegoController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -29,11 +30,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('juego' );
     }
-    public function juegoAleatorio()
+    public function aleatorio()
     {
-        /*if (Auth::check())
+        if (Auth::check())
         {
             $user = Auth::user();
             
@@ -135,12 +136,6 @@ class HomeController extends Controller
             return view('juego', $datos);//->with($datos)
              
         }
-        //return view('home');*/
-        return redirect()->action('JuegoController@aleatorio');
+        //return view('home');
     }
-    /*private function aleatorio($tabla)
-    {
-         $aleatorio = rand ( 0 , (count($tabla)-1));
-        return $aleatorio;
-    }*/
 }
