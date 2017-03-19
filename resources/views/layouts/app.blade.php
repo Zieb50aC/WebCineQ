@@ -88,7 +88,9 @@
     <!-- JavaScripts -->
     <script src="http://localhost/mQFrEn/movieQFrontEnd/public/js/jquery-3.1.1.min.js"></script>
     <script src="http://localhost/mQFrEn/movieQFrontEnd/public/js/bootstrap.min.js"></script>
-        <script src="http://localhost/mQFrEn/movieQFrontEnd/public/js/portada.js"></script>
+    <script src="http://localhost/mQFrEn/movieQFrontEnd/public/js/portada.js"></script>
+    <script src="http://localhost/mQFrEn/movieQFrontEnd/public/js/jquery.countdown.js"></script>
+    <script src="http://localhost/mQFrEn/movieQFrontEnd/public/js/juego.js"></script>
 
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
 </body>

@@ -118,12 +118,13 @@
     font-size: 16px;
     color: #001F3F;
     margin-bottom: 20px;
-    margin-left: 20px; }
-  .formulario > div {
+    margin-left: 20px; 
+}
+.formulario > div {
     padding: 20px 0;
-    border-bottom: 1px solid #ccc; }
-  .formulario .radio label,
-  .formulario .checkbox label {
+    border-bottom: 1px solid #ccc; 
+}
+.formulario .radio label, .formulario .checkbox label {
     display: inline-block;
     cursor: pointer;
     color: #FF4136;
@@ -133,41 +134,133 @@
     border-radius: 5px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-    .formulario .radio label:hover,
-    .formulario .checkbox label:hover {
-      background: rgba(255, 65, 54, 0.1); }
-    .formulario .radio label:before,
-    .formulario .checkbox label:before {
-      content: "";
-      display: inline-block;
-      width: 17px;
-      height: 17px;
-      position: absolute;
-      left: 15px;
-      border-radius: 50%;
-      background: none;
-      border: 3px solid #FF4136; }
-  .formulario input[type="radio"] {
-    display: none; }
-    .formulario input[type="radio"]:checked + label:before {
-      display: none; }
-    .formulario input[type="radio"]:checked + label {
-      padding: 5px 15px;
-      background: #FF4136;
-      border-radius: 2px;
-      color: #fff; }
-  .formulario .checkbox label:before {
-    border-radius: 3px; }
-  .formulario .checkbox input[type="checkbox"] {
-    display: none; }
-    .formulario .checkbox input[type="checkbox"]:checked + label:before {
-      display: none; }
-    .formulario .checkbox input[type="checkbox"]:checked + label {
-      background: #FF4136;
-      color: #fff;
+    transition: all 0.3s ease; 
+}
+.formulario .radio label:hover, .formulario .checkbox label:hover {
+    background: rgba(255, 65, 54, 0.1); 
+}
+.formulario .radio label:before, .formulario .checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 3px solid #FF4136; 
+}
+.formulario input[type="radio"] {
+    display: none; 
+}
+.formulario input[type="radio"]:checked + label:before {
+    display: none; 
+}
+.formulario input[type="radio"]:checked + label {
+    padding: 5px 15px;
+    background: #FF4136;
+    border-radius: 2px;
+    color: #fff; 
+}
+.formulario .checkbox label:before {
+    border-radius: 3px; 
+}
+.formulario .checkbox input[type="checkbox"] {
+    display: none; 
+}
+.formulario .checkbox input[type="checkbox"]:checked + label:before {
+    display: none; 
+}
+.formulario .checkbox input[type="checkbox"]:checked + label {
+    background: #FF4136;
+    color: #fff;
+}
 
+/*******************************************************************************************************************/
+.juegoFondoModal{
+    background-color: black !important;
+    
+}
+/*.juegoFondoModalko{
+    background-color: rgba(255, 25, 5, 0.8) !important;
+    
+}*/
+.preguntaPequeGreen{
 
+    font-size: 45px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #07ff00;
 
+}
+.preguntaPequeRed{
 
+    font-size: 45px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #ff0000;
+}
+.juegoContornoOk{
+    border:5px solid #07ff00;
+    border-radius: 5px;
+}
+.juegoContornoKo{
+    border:5px solid #ff0000;
+    border-radius: 5px;
+}
+
+.estrellas{
+    margin-bottom: 20px;
+}
+.ec-stars-wrapper {
+    
+    font-size: 0px;
+    display: inline-block;
+}
+.ec-stars-wrapper a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 90px;
+    font-size: 5rem;
+    color: #888;
+    cursor: pointer;
+}
+
+.ec-stars-wrapper:hover a {
+    /*color:  #240100;*/
+    color:coral;
+}
+.star_color{
+    /*color:  #240100 !important;*/
+    color:coral !important;
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+    color: #888;
+}
+.alerta{
+    border:1px solid #240100;
+    border-radius:10px;
+    z-index: 999;
+    position: relative;    
+    /*top: 0px;
+    right: 50px;*/
+    background-color: white;
+    padding: 15px;
+    color:black;
+    font-weight: bold;
+    margin-bottom: -50px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 10px 10px 59px -4px rgba(0,0,0,0.45);
+    -moz-box-shadow: 10px 10px 59px -4px rgba(0,0,0,0.45);
+    box-shadow: 10px 10px 59px -4px rgba(0,0,0,0.45);
+    
+}
+.preguntaPequePeq{
+    font-size: 25px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #ff0000;
+    float: left;
+    padding-top: 20px;
+    padding-right: 30px;
+    margin-left: 30px;
+}
 
