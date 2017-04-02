@@ -2,7 +2,7 @@ $(document).ready(function(){
     
    
     maxP = inicio();
-    
+    console.log("maxP: ", maxP);
     
     //eventos relacionados con los votos
     $('.ec-stars-wrapper').on("mouseenter", votarHovers); //'pinta' las estrellas 
@@ -12,11 +12,76 @@ $(document).ready(function(){
     $('.cancelaVoto').on("click", ocultaAlertaVotos())
     
 });
-  
-function nuevaPregunta()
+
+//ENVIA LA RESPUESTA AL SERVIDOR Y RECIBE SI TRUE/FALSE
+function enviaPregunta(num, idPreg, idPP, idUser, idOponente)
 {
+   // var _token = $('input[name="_token"]').val();
     
+    console.log("num ", num);
+    console.log("idPreg ", idPreg);   
+    $numPre = "pregunta" + num;
     
+   // if(typeoff $("input[name='" + $numPre + "']:checked") != 'undefined'){
+        $valor = $("input[name='"+$numPre + "']:checked").attr("id");
+    //}
+   // else{
+    //    $valor = "noData";
+    //}
+    
+    $ur = $("#0").attr('ur');
+    
+    $.ajaxSetup(
+    {
+        headers:
+        {
+            'X-CSRF-Token': $('input[name="_token"]').val()
+        }
+    });
+    
+    $.ajax({
+        data: {"idUsuario" : idUser
+             , "idOponente" : idOponente
+             , "idPregunta" : idPreg
+             , "respuesta"  : $valor
+             , "idPP" : idPP
+                //, _token : _token
+              },
+        type: "POST",
+        dataType: "json",
+        url: $ur,
+    })
+     .done(function( data, textStatus, jqXHR ) {
+         if ( console && console.log ) {
+             console.log( "La solicitud se ha completado correctamente." );
+             console.log("result: ", data.result );
+             console.log("finJuego: ", data.finJuego );
+             console.log("finPartida: ", data.finPartida );
+             console.log("numPregPartida: ", data.numPregPartida );
+             console.log("PartidaIdJ1: ", data.PartidaIdJ1 );
+             console.log("idUsuario: ", data.idUsuario );
+             
+             if(data.result == false)
+             {
+                 $("#modalKo" + num + "").modal("show");
+             }
+             else
+             {
+                 $("#modalOk" + num + "").modal("show");
+             }
+             /*if(data.finJuego && !data.finPartida)
+             {
+                 $("#finJuego").modal("show");
+             }*/
+         }
+     })
+     .fail(function( jqXHR, textStatus, errorThrown ) {
+         if ( console && console.log ) {
+             console.log( "La solicitud a fallado: " +  textStatus);
+             console.log( "errorThrown: ", errorThrown);
+             console.log( "jqXHR: ", jqXHR);
+         }
+    });
     
 }
 
@@ -38,10 +103,12 @@ function inicio()
     ocultaAlertaVotos();
     insertaVotos();
     
-    return count;
+    return count/3;
 }
+
 //evento siguiente pregunta
 function next($i){
+    
     if($i<(maxP-1))
     {
         $("#preg"+$i).hide();
@@ -50,7 +117,7 @@ function next($i){
     }
     else
     {
-       $("#fin").show();       
+       $("#finJuego").modal("show");      
     }
           
 }

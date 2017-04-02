@@ -30,9 +30,10 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::auth();
 
-    Route::get('/home', 'HomeController@index');
+    Route::get('home', 'HomeController@index');
     Route::get('/home/juegoAleatorio', 'HomeController@juegoAleatorio');
     Route::get('/juego', 'JuegoController@index');
     Route::get('/juego/aleatorio', 'JuegoController@aleatorio');
+    Route::post('/juego/respuesta', 'JuegoController@respuesta');
 });
 

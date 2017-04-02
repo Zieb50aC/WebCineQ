@@ -21,9 +21,10 @@ c<div class="preguntaPeque">ine </div>??</div>
     </div>
      <div class="col-md-6">
          <p class="welcomeP">ENTRA Y AVERÍGUALO</p>
-         <a id = "sinLog" href="{{ url('/login') }}" class="btn btn-default btn-lg btn-block sombraCaja">Login</a>
-         <a href="{{ url('/register') }}" class="btn btn-default btn-lg btn-block sombraCaja">Registrate</a>
-         
+         @if (Auth::guest()) 
+            <a id = "sinLog" href="{{ url('/login') }}" class="btn btn-default btn-lg btn-block sombraCaja">Login</a>
+            <a href="{{ url('/register') }}" class="btn btn-default btn-lg btn-block sombraCaja">Registrate</a>
+         @endif
     </div>
 </div>
 @endsection

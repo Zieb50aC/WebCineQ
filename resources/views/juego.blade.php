@@ -42,8 +42,8 @@
                                             </div>
                                           </div>
                                         </div>
-                                        <button id="{{$i}}" type="button" class="btn btn-primary btn-xs sigP"  data-toggle="modal" data-target="#modalKo{{$i}}">Siguiente pregunta</button>
-                                        <button id="Ok{{$i}}" type="button" class="btn btn-primary btn-xs sigP"  data-toggle="modal" data-target="#modalOk{{$i}}">Siguiente pregunta</button>
+                                        <button ur="{{ url('/juego/respuesta')}}" id="{{$i}}" type="button" class="btn btn-primary btn-xs sigP"  onClick="enviaPregunta({{$i}},{{$preguntas[$i]['id']}},{{$preguntas[$i]['idPP']}}, {{ Auth::user()->id }}, {{$idOponente}})">Siguiente pregunta</button>
+                                        
                                     </div>
                                     <div class="modal fade" id="modalKo{{$i}}" role="dialog">
                                         <div class="modal-dialog juegoFondoModal">
@@ -89,31 +89,29 @@
   
                             
                            <div id="fin" class="form-group">  
-                                <button type="submit" class="btn btn-default btn-lg btn-block" style="font-family: fantasy; font-size: x-large;">
+                                <button  type="submit" class="btn btn-default btn-lg btn-block" style="font-family: fantasy; font-size: x-large;">
                                    >>
                                 </button>
                             </div>
                         </form>
                 
                 
-                        <div class="modal fade" id="alerta" role="dialog">
-                            <div class="modal-dialog modal-sm">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                  <h4 id = "textoVoto" class="modal-title"></h4>
-                                  <button id="ButtonGuardaPerfil" type="submit" class="botonOK btn btn-xs btn-primary">Vota</button>
+                        <div class="modal fade" id="finJuego" role="dialog">
+                            <div class="modal-dialog juegoFondoModal">
+                                <div class="modal-body juegoContornoFin">
+                                    <!--<form role="form" class="form-horizontal formulario" method="GET" action="{{ url('/home') }}" >
+                                        {!! csrf_field() !!}-->
+                                        <p class="text-center preguntaPequeFin">Fin de tu turno ...</p>
+                                        <img style="width:200px; height:200px;" class="homePruebas" src = "../../public/img/wait2.png">
+                                        </br>
+                                        <!--<div class="form-group">-->  
+                                            <a class="btn btn-default pull-right" href="{{ url('/home') }}">Regresar a la página principal</a>
+                                        <!--</div>-->
+                                    </form>
                                 </div>
-                                <!--<div class="modal-body">
-                                  <p>This is a small modal.</p>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                                    
-                                </div>
-                              </div>
                             </div>
-                          </div>
+                        </div>
+                          
                     </div>
                 </div>
             </div>

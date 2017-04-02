@@ -196,12 +196,21 @@
     font-size: 45px;
     text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #ff0000;
 }
+.preguntaPequeFin{
+
+    font-size: 45px;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px coral;
+}
 .juegoContornoOk{
     border:5px solid #07ff00;
     border-radius: 5px;
 }
 .juegoContornoKo{
     border:5px solid #ff0000;
+    border-radius: 5px;
+}
+.juegoContornoFin{
+    border:5px solid coral;
     border-radius: 5px;
 }
 

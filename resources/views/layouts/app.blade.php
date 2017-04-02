@@ -15,8 +15,8 @@
         
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     
-		<link rel="shortcut icon" href="" type="image/ico" />
-		<link rel="icon" href="" type="image/ico" />
+		<!--<link rel="shortcut icon" href="" type="image/ico" />
+		<link rel="icon" href="" type="image/ico" />-->
 
         <title>MovieQ | @yield('title')</title>
 
@@ -66,9 +66,9 @@
                 <a href="{{ url('/register') }}" class="btn btn-default btn-lg btn-block sombraCaja">Registrate</a>-->
             @else
                  <li class="dropdown sinPunto">
-                    <a class="btn btn-default btn-lg btn-block dropdown-toggle sombraCaja" data-toggle="dropdown" href="#" aria-expanded="false">{{ Auth::user()->name }}<span class="caret"></span></a>
+                    <a class="btn btn-default btn-lg btn-block dropdown-toggle sombraCaja" data-toggle="dropdown" aria-expanded="false">{{ Auth::user()->name }}<span class="caret"></span></a>
                     <ul class="dropdown-menu sombraCaja" style = "min-width: 100% !important;">
-                        <li><a href="{{ url('/home') }}">Pagina Principal</a></li>
+                        <li><a href="{{ url('home') }}">Pagina Principal</a></li>
                         <li class="divider"></li>
                         <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                     </ul>
@@ -92,6 +92,6 @@
     <script src="http://localhost/mQFrEn/movieQFrontEnd/public/js/jquery.countdown.js"></script>
     <script src="http://localhost/mQFrEn/movieQFrontEnd/public/js/juego.js"></script>
 
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    
 </body>
 </html>

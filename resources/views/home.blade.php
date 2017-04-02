@@ -25,10 +25,10 @@
                                     </td>
                                     <td>Cras justo odio</td>
                                     <td>
-                                        <a href="#" class="homeBtnAcceptar">Aceptar Desafio</a>
+                                        <a class="homeBtnAcceptar">Aceptar Desafio</a> <!-- href="" -->
                                     </td>
                                     <td>
-                                        <a href="#" class="homeBtnRechazar">Rechazar Desafio</a>
+                                        <a  class="homeBtnRechazar">Rechazar Desafio</a><!-- href="" -->
                                     </td>
                                 </tr>
                                 <tr class=" homebordeTablaBttom">
@@ -37,10 +37,10 @@
                                     </td>
                                     <td>Dapibus ac facilisis in</td>
                                     <td>
-                                        <a href="#" class="homeBtnAcceptar">Aceptar Desafio</a>
+                                        <a  class="homeBtnAcceptar">Aceptar Desafio</a><!-- href="" -->
                                     </td>
                                     <td>
-                                        <a href="#" class="homeBtnRechazar">Rechazar Desafio</a>
+                                        <a  class="homeBtnRechazar">Rechazar Desafio</a><!-- href="" -->
                                     </td>
                                 </tr>
                                 
@@ -49,7 +49,7 @@
                         </br>
                         <p class="homeSubtitulo"><i class="fa fa-play" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Nuevo Juego</p>
                         </br>
-                        <form role="form" class="form-horizontal" method="GET" action="{{ url('/home/juegoAleatorio') }}" >
+                        <form role="form" class="form-horizontal" method="GET" action="{{ url('/juego/aleatorio') }}" >
                             <!--<input type="hidden" name="_token" value="{!! csrf_token() !!}">-->
                             {!! csrf_field() !!}
                             <div class="form-group">  
